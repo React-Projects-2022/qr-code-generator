@@ -1,10 +1,10 @@
 import { Image } from "./Image";
-
+import { downloadImage } from "./../helpers/download-image";
 export const Result = ({ qrCode, text }) => (
   <div className="output-box">
     <Image qrCode={qrCode} text={text} />
-    <a href={qrCode} download target="_blank" rel="noreferrer">
-      <button type="button">Download</button>
-    </a>
+    <button onClick={() => downloadImage(qrCode, text)} type="button">
+      Download
+    </button>
   </div>
 );
