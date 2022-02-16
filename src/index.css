@@ -45,3 +45,14 @@ button:active {
   align-items: center;
   gap: 40px;
 }
+
+.footer {
+  font-size: large;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: forestgreen;
+  color: white;
+  text-align: center;
+}

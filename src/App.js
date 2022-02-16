@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Footer } from "./components/Footer";
 import { InputBox } from "./components/InputBox";
 import { Result } from "./components/Result";
 import { useInputQROptions } from "./hooks/useInputQROptions";
@@ -41,6 +42,7 @@ function App() {
       <h1>QR Code Generator</h1>
       <InputBox {...props} />
       <Result qrCode={qrCode} text={text} />
+      <Footer />
     </div>
   );
 }
